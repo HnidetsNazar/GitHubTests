@@ -7,7 +7,7 @@ import { Key } from 'webdriverio'
 import PricingPage from "./../pages/pricing.page.js"
 
 describe('GitHub tests', () => {
-  xit('Test Case 1', async () => {
+  it('Test Case 1', async () => {
       await browser.url(`https://github.com`);
 
       await MainPage.clickOnSignUpBtn()
@@ -41,7 +41,7 @@ describe('GitHub tests', () => {
 
   })
 
-  xit('Test Case 2', async() => {
+  it('Test Case 2', async() => {
     await browser.url(`https://github.com`);
 
     await browser.pause(2000)
@@ -61,7 +61,7 @@ describe('GitHub tests', () => {
     await browser.pause(3000)
   })
 
-  xit("Test Case 3", async() => {
+  it("Test Case 3", async() => {
     await browser.url(`https://github.com`);
 
     await MainPage.scrollSubscribeBtn()
@@ -106,7 +106,7 @@ describe('GitHub tests', () => {
 
   })
 
-  xit('Test Case 4', async() => {
+  it('Test Case 4', async() => {
     await browser.url(`https://github.com`);
 
     await MainPage.clickOnSearchInput()
